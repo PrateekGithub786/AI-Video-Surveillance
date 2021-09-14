@@ -23,3 +23,7 @@ function modelLoaded(){
     video.speed(1);
     video.volume(0);
 }
+
+function draw(){
+    image(video, 0, 0, 300, 300);
+}
