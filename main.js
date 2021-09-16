@@ -33,8 +33,9 @@ function draw(){
             document.getElementById("status").innerHTML = "Status : Object Detected";
             document.getElementById("objects").innerHTML = "Number of objects detected are : " + objects.length;
             percent = floor(objects[i].confidence*100);
-            fill(red);
-            stroke(red);
+            fill("red");
+            stroke("red");
+            rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
             noFill();
             text(objects[i].label + " " + percent + " %", objects[i].x + 15, objects[i].y + 15);
         }
